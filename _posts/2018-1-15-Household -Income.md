@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Use of Weighted Mean Income for Comparing Wealth by Zipcode in NYC (and comarisons with other publicly available metrics)
@@ -27,6 +26,8 @@ Having calculated weighted average income for each zipcode, we then graphed the 
 
 - Weighted mean household income for Tribeca:   $159,947
 - Weighted mean household income for Mott Haven: $28,093
+
+![Picture](../images/Tribeca_Income.png?raw=true)
 
 Out of curiosity, I thought of comparing the data obtained with other parameters in different websites. city-data.com gives the following information for the zipcodes in question, albeit for 2016.
 
