@@ -1,6 +1,8 @@
 
-# Use of Weighted Mean Income for Comparing Wealth by Zipcode in NYC (and comarisons with other publicly available metrics)
-
+---
+layout: post
+title: Use of Weighted Mean Income for Comparing Wealth by Zipcode in NYC (and comarisons with other publicly available metrics)
+---
 Sources:
 https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2015-zip-code-data-soi
 http://www.city-data.com/neighborhood/Tribeca-New-York-NY.html
