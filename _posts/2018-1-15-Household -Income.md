@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Use of Weighted Mean Income for Comparing Wealth by Zipcode in NYC (and comarisons with other publicly available metrics)
+title: Use of Weighted Mean Income for Comparing Wealth by Zipcode in NYC (and comparisons with other publicly available metrics)
 ---
 Sources:
--[IRS 2015 NY Tax Info](https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2015-zip-code-data-soi)
--[city-data.com - Tribeca](http://www.city-data.com/neighborhood/Tribeca-New-York-NY.html)
--[city-data.com - Mott Haven](http://www.city-data.com/neighborhood/Mott-Haven-Bronx-NY.html)
--[point2homes.com - Tribeca](https://www.point2homes.com/US/Neighborhood/NY/Manhattan/TriBeCa-Demographics.html)
--[point2homes.com - Mott Haven](https://www.point2homes.com/US/Neighborhood/NY/Bronx/Mott-Haven-Demographics.html)
+
+- [IRS 2015 NY Tax Info](https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2015-zip-code-data-soi)
+- [city-data.com - Tribeca](http://www.city-data.com/neighborhood/Tribeca-New-York-NY.html)
+- [city-data.com - Mott Haven](http://www.city-data.com/neighborhood/Mott-Haven-Bronx-NY.html)
+- [point2homes.com - Tribeca](https://www.point2homes.com/US/Neighborhood/NY/Manhattan/TriBeCa-Demographics.html)
+- [point2homes.com - Mott Haven](https://www.point2homes.com/US/Neighborhood/NY/Bronx/Mott-Haven-Demographics.html)
 
 This resource looks at the decision to use a weighted mean income for a group project at a data science bootcamp. The project was to optimize foot traffic and purchasing power in pinpointing subway entrance locations for the purpose of fundraising.
 
