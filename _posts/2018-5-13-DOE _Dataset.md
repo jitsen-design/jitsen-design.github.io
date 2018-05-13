@@ -1,5 +1,7 @@
-#### Relationship between School Safety and Attendance Rates ####
-
+---
+layout: post
+title: Relationship between School Safety and Attendance Rates
+---
 This study looks at the relationship of different variables on attendance rates in NYC public high schools, and attempts to extract the effect of school safety in particular. The study used five school years beginning 2006-2007, and contained the following variables:
 
 * Academic Expectations
