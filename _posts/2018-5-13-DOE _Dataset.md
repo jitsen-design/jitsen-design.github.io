@@ -26,7 +26,7 @@ An intial look at the relationshiop between safety and attendance rates tells us
 
 The R<sup>2</sup> for this relationship is at .33. However, we can safely say that many of the above variables are strongly co-dependent, so we can use K-Means to cluster the data points (schools for a given year) into groups. This is so that we can control for confounders correlated with safety. For this exercise, I have used nine groups.
 
-![Attendance vs Safety K-Means](../images/Attendance_Safety.png?raw=true)
+![Attendance vs Safety K-Means](../images/K_Means_.png?raw=true)
 
 While the K-Means technique does still clearly show a relationship between safety and attendance (at least for some clusters), we would like to quantify the effect. With a maimum R<sup>2</sup> of around 30%, finding a linear relationship is not possible. Instead, we can approach this with a propensity score matching technique. 
 
@@ -36,7 +36,7 @@ Once this is done, we can run our data through logistic regression, asking the m
 
 For this classifification, I have used SciKit-Learn's Logistic Regression algorithm, and generated likelihoods for each data point being in the 'high' or 'low' safety group based on the predict_proba output. Having done this, we can look at the pre-defined 'high' and 'low' groups (seperated earlier on median safety score of 7), and plot each data point's likelihood of being in the 'high' safety group (irrespective of their manual classification). 
 
-[High Likelihood Dist](../images/Safety_Dist.png?raw=true)
+![High Likelihood Dist](../images/Safety_Dist.png?raw=true)
 
 Since we have overlap between log likelihood of -2 and -.5, we compare data points from both groupswithin that range. Note that the log likelihood for the 'high' safety group is concentrated near 0. This is expected, since predicitons for this group are much more accurate than the other group.
 
