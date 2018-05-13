@@ -2,23 +2,22 @@
 
 This study looks at the relationship of different variables on attendance rates in NYC public high schools, and attempts to extract the effect of school safety in particular. The study used five school years beginning 2006-2007, and contained the following variables:
 
-Academic Expectations
-Attendance Rate
-Communications
-DBN
-Engagement
-Enrollment
-Grade
-Graduation Rate 4-Year 
-Overall Score
-Peer Index
-Percentile
-Principal
-Safety
-Weighted Environment
-Weighted Regents Pass Rate - English
-Weighted Regents Pass Rate - Math
-Weighted Regents Pass Rate - U.S. History
+* Academic Expectations
+* Attendance Rate
+* Communications
+* DBN
+* Engagement
+* Enrollment
+* Grade
+* Overall Score
+* Peer Index
+* Percentile
+* Principal
+* Safety
+* Weighted Environment
+* Weighted Regents Pass Rate - English
+* Weighted Regents Pass Rate - Math
+* Weighted Regents Pass Rate - U.S. History
 
 An intial look at the relationshiop between safety and attendance rates tells us that there is a strong relationship:
 
@@ -44,18 +43,18 @@ We can then compare all possible pairs from each group, and retrieve pairs that 
 
 Finally, we can do a t-test on paired data (one variable being safety, and the other being the attendance rate). The p-vaule for this test is 3.4495312085641958e-08; which is very and, therefore, statistically siginficant. However, what about other variables? Are they statstically significant when paired with the attendance rate? If they were, it would mean that we had not yet effectively controlled for confounders. Let's look at the p-values for other variables:
 
-Enrollment: Ttest_relResult(statistic=-1.25784283, pvalue=0.2092376)
-Peer Index: Ttest_relResult(statistic=-1.0547598557918683, pvalue=0.29221972517351663) 
-Academic Expectations: Ttest_relResult(statistic=2.4088534839828113, pvalue=0.016488081449978213) 
-Communications:  Ttest_relResult(statistic=-1.7301316176001817, pvalue=0.084436136939127493) 
-Engagement: Ttest_relResult(statistic=1.2447686029507905, pvalue=0.21400043129765792) 
-4-Year Grad Rate: Ttest_relResult(statistic=-2.0866656554967795, pvalue=0.037598819312703542) 
-Overall Score: Ttest_relResult(statistic=1.7016595588686818, pvalue=0.089654740354808721) 
-Percentile: Ttest_relResult(statistic=1.4243915287182163, pvalue=0.15517148572418973) 
-Weighted Environment: Ttest_relResult(statistic=-1.0662530648377315, pvalue=0.28700077814321301) 
-Weighted Regent's English: Ttest_relResult(statistic=1.6501349332365285, pvalue=0.099759371485699827) 
-Weighted Regent's Math: Ttest_relResult(statistic=2.1253272477684186, pvalue=0.034217813187284764) 
-Weighted Regent's US History: Ttest_relResult(statistic=2.2939505068934491, pvalue=0.022350043055787642)
+* Enrollment: Ttest_relResult(statistic=-1.25784283, pvalue=0.2092376)
+* Peer Index: Ttest_relResult(statistic=-1.0547598557918683, pvalue=0.29221972517351663) 
+* Academic Expectations: Ttest_relResult(statistic=2.4088534839828113, pvalue=0.016488081449978213) 
+* Communications:  Ttest_relResult(statistic=-1.7301316176001817, pvalue=0.084436136939127493) 
+* Engagement: Ttest_relResult(statistic=1.2447686029507905, pvalue=0.21400043129765792) 
+* 4-Year Grad Rate: Ttest_relResult(statistic=-2.0866656554967795, pvalue=0.037598819312703542) 	
+* Overall Score: Ttest_relResult(statistic=1.7016595588686818, pvalue=0.089654740354808721) 
+* Percentile: Ttest_relResult(statistic=1.4243915287182163, pvalue=0.15517148572418973) 
+* Weighted Environment: Ttest_relResult(statistic=-1.0662530648377315, pvalue=0.28700077814321301) 
+* Weighted Regent's English: Ttest_relResult(statistic=1.6501349332365285, pvalue=0.099759371485699827) 
+* Weighted Regent's Math: Ttest_relResult(statistic=2.1253272477684186, pvalue=0.034217813187284764) 
+* Weighted Regent's US History: Ttest_relResult(statistic=2.2939505068934491, pvalue=0.022350043055787642)
 
 given that some of the other variables have p-values less than the standard of .05, we may say that we haven't successfully controlled for confounders. However, given that the p-value for safety is much smaller 3.4495312085641958e-08, perhaps it can be interpreted as the only significant variable. In relation to the rest.
 
