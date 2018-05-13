@@ -26,7 +26,7 @@ An intial look at the relationshiop between safety and attendance rates tells us
 
 The R<sup>2</sup> for this relationship is at .33. However, we can safely say that many of the above variables are strongly co-dependent, so we can use K-Means to cluster the data points (schools for a given year) into groups. This is so that we can control for confounders correlated with safety. For this exercise, I have used nine groups.
 
-![Attendance vs Safety K-Means](../images/K_Means_.png?raw=true)
+![Attendance vs Safety K-Means](../images/K_Means.png?raw=true)
 
 While the K-Means technique does still clearly show a relationship between safety and attendance (at least for some clusters), we would like to quantify the effect. With a maimum R<sup>2</sup> of around 30%, finding a linear relationship is not possible. Instead, we can approach this with a propensity score matching technique. 
 
