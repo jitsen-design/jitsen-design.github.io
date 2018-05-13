@@ -58,7 +58,7 @@ Finally, we can do a t-test on paired data (one variable being safety, and the o
 * Weighted Regent's Math: Ttest_relResult(statistic=2.1253272477684186, pvalue=0.034217813187284764) 
 * Weighted Regent's US History: Ttest_relResult(statistic=2.2939505068934491, pvalue=0.022350043055787642)
 
-given that some of the other variables have p-values less than the standard of .05, we may say that we haven't successfully controlled for confounders. However, given that the p-value for safety is much smaller 3.4495312085641958e-08, perhaps it can be interpreted as the only significant variable. In relation to the rest.
+given that some of the other variables have p-values less than the standard of .05, we may say that we haven't successfully controlled for confounders. However, given that the p-value for safety is much smaller 3.4495312085641958e-08, perhaps it can be interpreted as the only significant variable in relation to the rest.
 
 
 
