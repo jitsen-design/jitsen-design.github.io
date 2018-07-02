@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Word2Vec, t-SNE, NMF and LDA to analyze Difference in Topicality and Frequency of Tweets among Top Talk 
+title: NMF and LDA to analyze Difference in Topicality and Frequency of Tweets among Top Talkshow Hosts
 ---
 
 This project explores Twitter activity of prominent talk show hosts: Namely, Bill Maher, Bill O'Reilly, Sean Hannity and John Oliver. It also uses Non-Negative Matrix Factorization (NMF) and Latent Dirichlet Allocation (LDA) to look at top themes within those tweets.
@@ -15,7 +15,7 @@ We can also look at how often, each tweet is retweeted. It is clear that the flu
 
 Finally we can analyze trends in retweets per tweet for a talk show host, but dividing the sum of retweets for a given year by the number of total tweets for that year. We see an exponential upward trend here. It is also noticieable that the Liberal hosts enjoy a higher % of retweets, possibly due to their relatively low frequency of tweets.
 
-![Average Retweets per Tweet](../images/tweets.png?raw=true)
+![Average Retweets per Tweet](../images/relative_retweets.png?raw=true)
 
 Finally we can look at themes or topicality of tweets by using Non-Negative Matrix Factorization and Latent Dirichlet Allocation.
 
