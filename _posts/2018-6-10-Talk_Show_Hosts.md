@@ -90,6 +90,6 @@ There doesn't seem to be very much to decipher in terms of clear partisanship be
 
 The results for this comparison is disappointing as well. We are unable to see distinctions between these two hosts as well. Finally, let's take a look at  Word2Vec vectorization of each host plotted on t-SNE with Pincipal Component Analysis (PCA) dimension reduction. PCA with t-SNE allows us th plot 100 dimensional world vectors to be plotted on a 2D visual
 
-![Word Embeddings for all hosts](../images/bokeh.png?raw=true)
+![Word Embeddings for all hosts](../images/Bokeh.png?raw=true)
 
 The word plots show the difference in scale of activity between the Liberal and Conservative talkshow hosts. You can also see that word relationships are more sparse for John Oliver than for Bill Maher. This is natural, given that John Oliver covers a broader varierty of topics in his weekly show than Bill Maher does in his nightly offering.
