@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NMF and LDA to analyze Difference in Topicality and Frequency of Tweets among Top Talkshow Hosts
+title: NMF and LDA to Analyze Difference in Topicality and Frequency of Tweets among Top Talkshow Hosts
 ---
 
 This project explores Twitter activity of prominent talk show hosts: Namely, Bill Maher, Bill O'Reilly, Sean Hannity and John Oliver. It also uses Non-Negative Matrix Factorization (NMF) and Latent Dirichlet Allocation (LDA) to look at top themes within those tweets.
