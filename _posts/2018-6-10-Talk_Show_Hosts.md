@@ -7,15 +7,15 @@ This project explores Twitter activity of prominent talk show hosts: Namely, Bil
 
 First, let's look at the how frequently each show host tweets. It seems that Sean Hannity is consistently on top, followed by Bill O'Reilly. It is safe to say that the Conservative hosts are more active on Twitter. To be fair, John Oliver has not had his show for a very long time, and his activity on Twitter is limited.
 
-![Number of Tweets](../images/tweets.png?raw=true)
+![Number of Tweets](../images/tweets_.png?raw=true)
 
 We can also look at how often, each tweet is retweeted. It is clear that the flurry of activity on Twitter in terms of retweets from all hosts is recent. Perhaps this this due to the fact that people only recently began to realize how potent of a tool Twitter really is.
 
-![Number of Retweets](../images/retweets.png?raw=true)
+![Number of Retweets](../images/retweets_.png?raw=true)
 
 Finally we can analyze trends in retweets per tweet for a talk show host, but dividing the sum of retweets for a given year by the number of total tweets for that year. We see an exponential upward trend here. It is also noticieable that the Liberal hosts enjoy a higher % of retweets, possibly due to their relatively low frequency of tweets.
 
-![Average Retweets per Tweet](../images/relative_retweets.png?raw=true)
+![Average Retweets per Tweet](../images/relative_retweets_.png?raw=true)
 
 Finally we can look at themes or topicality of tweets by using Non-Negative Matrix Factorization and Latent Dirichlet Allocation.
 
@@ -90,6 +90,6 @@ There doesn't seem to be very much to decipher in terms of clear partisanship be
 
 The results for this comparison is disappointing as well. We are unable to see distinctions between these two hosts as well. Finally, let's take a look at  Word2Vec vectorization of each host plotted on t-SNE with Pincipal Component Analysis (PCA) dimension reduction. PCA with t-SNE allows us to plot 100 dimensional world vectors on a 2D visual.
 
-![Word Embeddings for all hosts](../images/Bokeh.png?raw=true)
+![Word Embeddings for all hosts](../images/Bokeh_.png?raw=true)
 
 The word plots show the difference in scale of activity between the Liberal and Conservative talkshow hosts. You can also see that word relationships are more sparse for John Oliver than for Bill Maher. This is natural, given that John Oliver covers a broader varierty of topics in his weekly show than Bill Maher does in his nightly offering.
