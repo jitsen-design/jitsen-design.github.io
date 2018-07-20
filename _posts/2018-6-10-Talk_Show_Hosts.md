@@ -88,7 +88,7 @@ There doesn't seem to be very much to decipher in terms of clear partisanship be
 * Topic 3: last piece night week thank
 * Topic 4: back like time sunday one
 
-The results for this comparison is disappointing as well. We are unable to see distinctions between these two hosts as well. Finally, let's take a look at  Word2Vec vectorization of each host plotted on t-SNE with Pincipal Component Analysis (PCA) dimension reduction. PCA with t-SNE allows us th plot 100 dimensional world vectors to be plotted on a 2D visual
+The results for this comparison is disappointing as well. We are unable to see distinctions between these two hosts as well. Finally, let's take a look at  Word2Vec vectorization of each host plotted on t-SNE with Pincipal Component Analysis (PCA) dimension reduction. PCA with t-SNE allows us to plot 100 dimensional world vectors on a 2D visual.
 
 ![Word Embeddings for all hosts](../images/Bokeh.png?raw=true)
 
