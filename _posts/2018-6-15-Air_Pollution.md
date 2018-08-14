@@ -28,7 +28,7 @@ Let us focus on COPD for the remainder of this discussion. We will revisit IHD a
 
 ![Histogram for COPD Deaths](../images/COPD_Hist.png?raw=true)
 
-With some regularization, I achieved good results (an R<sup>2</sup> of 0.70608 for COPD); while also achieving better results with a Random Forest regressor (accuracy score of 0.87757 for COPD).
+With some regularization, I achieved good results (an R^2 of 0.70608 for COPD); while also achieving better results with a Random Forest regressor (R^2 of 0.87757 for COPD).
 
 However, neither model could quantify the effect of particulate matter density. With my Poisson GLM, the coefficient for this feature (variable) was small and fluctuated wildly every time I ran my model (in spite of a small p-value). As for the Random Forest regressor, the model cannot provide coefficients to begin with (only feature importances). Since I clearly needed a different technique to quantify the effect of particle density, I tried controlling for confounders using K-Means. 
 
@@ -72,7 +72,7 @@ Putting all this together, we can say that we want 80% of the values from the sa
 
 Our margin of error is:
 
-(SE)(Zα+Zβ)
+(SE) * (Zα+Zβ)
 
 where SE in this case (0.0521) is the standard error of the sample of paired differences, and (Zα+Zβ) is the point estimate.
 
