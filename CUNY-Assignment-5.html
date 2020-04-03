@@ -1,0 +1,78 @@
+<html>
+<head><title>Assignment 5 - Jit Seneviratne</title></head>
+
+<body>
+
+<h1>Module 5</h1>
+<h2>Part One </h2>
+
+<script type="text/javascript">
+
+document.write('<br><p>Enter a word to be reversed')
+
+// Reverse entered word function
+
+function reverse(word){
+    return word.split("").reverse().join("");
+};
+
+function callReverse(){
+    var r = document.getElementById("reverse-target");
+    r.innerHTML = reverse(document.getElementById("word").value);
+}
+</script>
+<p>
+<form>
+    <input id="word" type="string" size="16">
+    <input type="button" value="Reverse" onClick="callReverse();">
+</form>
+</p>
+
+<div id="reverse-target"></div>
+
+<script>
+
+document.write('<br><p>Enter a number to see the first twenty multiples')
+
+function printTable(val) {
+    var multiples = [];
+    for (var i = 1; i <= 20; i++) {
+        multiples.push(i * val)
+    }
+    var num = 0;
+    var table = "";
+    table = table + '<table>';
+    for (var x = 0; x < 5; x++) {
+        table = table + '<tr>';
+        for (var y = 0; y < 4; y++) {
+            table = table + '<td>' + multiples[num] + '</td>';
+            num += 1;
+        }
+        table = table + '</tr>';
+    };
+    table = table + '</table>';
+
+    // print out full html string of table
+    document.getElementById("multiples-table").innerHTML = table;
+}
+
+function callPrintTable(){
+    printTable(document.getElementById("table-number").value);
+}
+
+</script>
+
+<form>
+    <input id="table-number" type="number" size="6">
+    <input type="button" value="Enter" onClick="callPrintTable();">
+</form>
+</p>
+
+<div id="multiples-table"></div>
+
+<script type="text/javascript" src="other_script.js"></script>
+
+<script type="text/javascript"> document.write(myScript());</script>
+
+</body>
+</html>
