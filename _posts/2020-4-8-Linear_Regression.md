@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Finding the Line of Best Fit using the Different Methods
+title: Finding the Line of Best in Linear Regression using Different Methods
 ---
 
 In article we'll come up with the line of best fit for linear regression using the least squares equation as well as the normal equation from linear algebra. While these methods are inter-connected, it is helpful to walk through the logic enshrined in the approaches. We'll use SKLearn's demo dataset 'Boston' for this purpose. We'll then compare our values with SKLearn's inbuilt LinearRegression class.
@@ -38,16 +38,16 @@ boston.head()
     }
 
     .dataframe tbody tr th {
-        vertical-align: top;
+        vertical-align: middle;
     }
 
     .dataframe thead th {
-        text-align: right;
+        text-align: middle;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: middle;">
       <th></th>
       <th>CRIM</th>
       <th>ZN</th>
