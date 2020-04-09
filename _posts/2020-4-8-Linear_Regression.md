@@ -45,7 +45,7 @@ boston.head()
         text-align: middle;
     }
 </style>
-<table border="1" class="dataframe">
+<table border="1" class="dataframe", style="table-layout:fixed">
   <thead>
     <tr style="text-align: middle;">
       <th></th>
