@@ -46,7 +46,8 @@ boston.head()
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<font size="5" face="Courier New" >
+<table border="1" class="dataframe", style="display: table-header-group">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -154,6 +155,7 @@ boston.head()
     </tr>
   </tbody>
 </table>
+</font>
 </div>
 
 
@@ -436,7 +438,7 @@ $$||b - A\bar{x}|| \leq ||b - Ax||$$
 
 This is equivalent to a vector $\bar{y}$ in the column space of A such that:
 
-$$||b - \bar{y}|| \leq ||b - y|$$
+$$||b - \bar{y}|| \leq ||b - y||$$
 
 
 for all $y$ in the column space of $A$ ($col(A)$)
