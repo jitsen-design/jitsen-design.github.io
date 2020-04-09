@@ -4,7 +4,7 @@ title: Finding the Line of Best Fit in Linear Regression using Different Methods
 mathjax: true
 ---
 
-In article we'll come up with the line of best fit for linear regression using the least squares equation as well as the normal equation from linear algebra. While these methods are inter-connected, it is helpful to walk through the logic enshrined in the approaches. We'll use SKLearn's demo dataset 'Boston' for this purpose. We'll then compare our values with SKLearn's inbuilt LinearRegression class.
+In this article we'll come up with the line of best fit for linear regression using the least squares equation as well as the normal equation from linear algebra. While these methods are inter-connected, it is helpful to walk through the logic enshrined in the approaches. We'll use SKLearn's demo dataset 'Boston' for this purpose. We'll then compare our values with SKLearn's inbuilt LinearRegression class.
 
 
 ### Import libraries and modules for use
