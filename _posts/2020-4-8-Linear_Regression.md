@@ -46,7 +46,6 @@ boston.head()
         text-align: right;
     }
 </style>
-<font size="5" face="Courier New" >
 <table border="1" class="dataframe", style="display: table-header-group">
   <thead>
     <tr style="text-align: right;">
@@ -155,7 +154,6 @@ boston.head()
     </tr>
   </tbody>
 </table>
-</font>
 </div>
 
 
