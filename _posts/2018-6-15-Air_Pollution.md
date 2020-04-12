@@ -72,7 +72,7 @@ Putting all this together, we can say that we want 80% of the values from the sa
 
 Our margin of error is:
 
-(SE) * (Zα+Zβ)
+$(SE)\times(Zα+Zβ)$
 
 where SE in this case (0.0521) is the standard error of the sample of paired differences, and (Zα+Zβ) is the point estimate.
 
@@ -80,7 +80,7 @@ However, we know we want our margin of error to be the difference between our me
 
 Rearranging the equation:
 
-n = ((Zα+Zβ)^2)(VAR)/(.007-0)^2) where VAR is the variance of our sample.
+$n = \frac{((Zα+Zβ)^2)\times VAR}{(.007-0)^2} where VAR is the variance of our sample.
 
 This is equal to a sample size of 2,030,376, which is much larger than we could possibly get in a real world setting!
 
