@@ -4,7 +4,9 @@ title: Poisson regression and intuition behind Poisson distribution of Y variabl
 mathjax: true
 ---
 
-In Poisson regression, we assume that our Y variable is Poisson distributed. This means that we assume that each row in the dataset is Poisson distributed with an expected value of $\lambda =\operatorname {E} (Y\mid x)=e^{\theta 'x}$ where $\theta$ is our set of coefficients and $x$ is our feature space. However, in many datasets where Y is Poisson distributed, The $Y$ vector itself is Poisson distributed, even though each observation presumably has its own unique $\lambda$ parameter. Let's explore why this might be the case. A primer on the Poisson random variable and the Poisson regression are given at the end of this notebook under sections:
+In Poisson regression, we assume that our Y variable is Poisson distributed. This means that we assume that each row in the dataset is Poisson distributed with its unique expected value.
+
+In other words, the expected value for each row is $\lambda =\operatorname {E} (Y\mid x)=e^{\theta 'x}$ where $\theta$ is our set of coefficients and $x$ is our feature space. However, in many datasets where Y is Poisson distributed, The $Y$ vector itself is Poisson distributed, even though each observation presumably has its own unique $\lambda$ parameter. Let's explore why this might be the case. A primer on the Poisson random variable and the Poisson regression are given at the end of this notebook under sections:
 
 1. Poisson Random Variable
 2. Poisson Regression and log link function
@@ -126,21 +128,17 @@ $$E(X) = \lambda = np$$
 
 Where E(X) is the expected value of the Poisson random variable, n is the number of trials, and p is the probability of success in a given trial. Then, as per our binomial distribution, the probability of k outcomes in n trials will be:
 
-\begin{equation}
-P(X = k) = {n \choose k}(\frac{\lambda}{n})^{k}(1-\frac\lambda{n})^{(n-k)}
-\end{equation}
+
+$$P(X = k) = {n \choose k}(\frac{\lambda}{n})^{k}(1-\frac\lambda{n})^{(n-k)}$$
 
 However, in order to ensure $k$ successes and not more than $k$ successes, we have to get very granular, and ensure the intervals $n$ are as large as possible. Therefore, we send $n$ towards infinity.
 
-\begin{equation}
-P(X = k) = \lim_{n\to\infty}{n \choose k}(\frac{\lambda}{n})^{k}(1-\frac\lambda{n})^{(n-k)}
-\end{equation}
+$$P(X = k) = \lim_{n\to\infty}{n \choose k}(\frac{\lambda}{n})^{k}(1-\frac\lambda{n})^{(n-k)}$$
 
 We can also separate exponent terms to make them easier to wield:
 
-\begin{equation}
-P(X = k) = \lim_{n\to\infty}\frac{n!}{(n-k)!k!}(\frac{\lambda}{n})^{k}(1-\frac\lambda{n})^{(n)}(1-\frac\lambda{n})^{(-k)}
-\end{equation}
+
+$$P(X = k) = \lim_{n\to\infty}\frac{n!}{(n-k)!k!}(\frac{\lambda}{n})^{k}(1-\frac\lambda{n})^{(n)}(1-\frac\lambda{n})^{(-k)}$$
 
 Now, when ${n\to\infty}$, 
 $\frac{n!}{(n-k)!}$ $\to\ 1$. Also $(1-\frac\lambda{n})^{(-k)}$ $\to\ 1$.
@@ -149,18 +147,13 @@ Now, can we recall the relationship between our number of trials $n$ and $e$?
 
 Let's look at the relationship between $n$ and $e$: 
 
-\begin{equation}
-\lim_{n\to\infty}(1+\frac1n)^n \simeq e
-\end{equation}
+
+$$\lim_{n\to\infty}(1+\frac1n)^n \simeq e$$
 
 
-\begin{equation}
-\lim_{n\to\infty}(1+\frac{a}n)^n \simeq e^{a}
-\end{equation}
+$$\lim_{n\to\infty}(1+\frac{a}n)^n \simeq e^{a}$$
 
-\begin{equation}
-\lim_{n\to\infty}(1-\frac{a}n)^n \simeq e^{-a}
-\end{equation}
+$$\lim_{n\to\infty}(1-\frac{a}n)^n \simeq e^{-a}$$
 
 Therefore:
 
@@ -168,11 +161,11 @@ $$(1-\frac\lambda{n})^{n}\to\ e^{-\lambda}$$.
 
 Substituting all of these values in our equation, we get
 
-$$p(k) = (1){{\lambda^k e^{-\lambda}}\over{k!}}(1)$$
+$$p(k) = (1)\frac{{\lambda^k e^{-\lambda}}{k!}(1)$$
 
 or 
 
-$$p(k) = {{\lambda^k e^{-\lambda}}\over{k!}}$$
+$$p(k) = \frac{{\lambda^k e^{-\lambda}}{k!}$$
 
 ### Poisson Regression and log link function
 
