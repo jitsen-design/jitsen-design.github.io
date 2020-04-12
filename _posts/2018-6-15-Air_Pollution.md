@@ -80,7 +80,7 @@ However, we know we want our margin of error to be the difference between our me
 
 Rearranging the equation:
 
-$n = \frac{((Zα+Zβ)^2)\times VAR}{(.007-0)^2} where VAR is the variance of our sample.
+$n = \frac{((Zα+Zβ)^2)\times VAR}{(.007-0)^2}$ where VAR is the variance of our sample.
 
 This is equal to a sample size of 2,030,376, which is much larger than we could possibly get in a real world setting!
 
