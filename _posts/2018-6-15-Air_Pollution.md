@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Predicting Deaths from Diseases Related to Air Pollution (and Quantifying the Effect of Air Pollution )
+mathjax: true
 ---
 ## Data Science Problem: 
 My project's first objective was to predict the number of deaths from diseases related to air pollution: namely Ischaemic Heart Disease (IHD) and Chronic Obstructive Pulmonary Disease (COPD). The second objective was to isolate and quantify the effect of air pollution in those deaths. I decided to structure my problem so that I was predicting deaths for each five year age group (for example, 65-70 years) for each county in the continental United States. 
