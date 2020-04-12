@@ -65,9 +65,9 @@ This makes intuitive sense, because the lungs are the first organs to be affecte
 
 ## Required Sample Size to Detect Significant Result for IHD:
 
-The minimum sample size is related to the power of a test, which is the complement of a Type 2 error (1-β). This is essentially probability of detecting a signficant difference between two statistics, if such a difference exists. If your (required) power is 80%, then this means that you have a 20% probability of failing to detect a significant difference when one does exist, i.e., a false negative result. It also means that you want 80% of the data points in your sampling distribution (i.e the 80th percentile of the distribution) to fall outside of the threshold of significance from your null distribution.
+The minimum sample size is related to the power of a test, which is the complement of a Type 2 error $(1-β)$. This is essentially probability of detecting a signficant difference between two statistics, if such a difference exists. If your (required) power is 80%, then this means that you have a 20% probability of failing to detect a significant difference when one does exist, i.e., a false negative result. It also means that you want 80% of the data points in your sampling distribution (i.e the 80th percentile of the distribution) to fall outside of the threshold of significance from your null distribution.
 
-Let's set Zβ to be the z-score that marks the 80th percentile of the sampling distribution. This value is approximately .84 standard errors from the mean of the distribution. What about our threshhold for significance for the null distribution? Let's set that at 5%. Let's denote Zα to be the z-score marking the 97.5th percentile (since this is a two sided test) which roughly leads to 1.96 standard errors from the mean of the null distribution.
+Let's set $Zβ$ to be the z-score that marks the 80th percentile of the sampling distribution. This value is approximately .84 standard errors from the mean of the distribution. What about our threshhold for significance for the null distribution? Let's set that at 5%. Let's denote Zα to be the z-score marking the 97.5th percentile (since this is a two sided test) which roughly leads to 1.96 standard errors from the mean of the null distribution.
 
 Putting all this together, we can say that we want 80% of the values from the sampling distribution to lie 1.96 standard errors away from the null distribution. The distance between the two means becomes our point estimate when we calculate our sample size. In other words, our point estimate is the z score from our threshold for significance plus our z-score from our power requirement (1.96 +.84 = 2.80).
 
@@ -75,13 +75,13 @@ Our margin of error is:
 
 $(SE)\times(Zα+Zβ)$
 
-where SE in this case (0.0521) is the standard error of the sample of paired differences, and (Zα+Zβ) is the point estimate.
+where $SE$ in this case (0.0521) is the standard error of the sample of paired differences, and $(Zα+Zβ)$ is the point estimate.
 
 However, we know we want our margin of error to be the difference between our mean difference between pairs (.007) and 0 (the null hypothesis): (.007-0).
 
 Rearranging the equation:
 
-$n = \frac{((Zα+Zβ)^2)\times VAR}{(.007-0)^2}$ where VAR is the variance of our sample.
+$n = \frac{((Zα+Zβ)^2)\times VAR}{(.007-0)^2}$ where $VAR$ is the variance of our sample.
 
 This is equal to a sample size of 2,030,376, which is much larger than we could possibly get in a real world setting!
 

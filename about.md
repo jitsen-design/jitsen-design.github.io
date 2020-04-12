@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-A data scientist and management accountant by profession. Associate Member of the Chartered Institute of Management Accountants and Member, CPA Australia. Interests include machine learning; statistical inference; cost accounting and fundraising for non-profits; interactive data simulations and design.
+A data scientist and management accountant by profession. Associate Member of the Chartered Institute of Management Accountants. Interests include machine learning; statistical inference; cost accounting and fundraising for non-profits; interactive data simulations and design.
 
 
 ### Notable Projects:
