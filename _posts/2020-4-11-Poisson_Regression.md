@@ -161,11 +161,11 @@ $$(1-\frac\lambda{n})^{n}\to\ e^{-\lambda}$$.
 
 Substituting all of these values in our equation, we get
 
-$$p(k) = (1)\frac{{\lambda^k e^{-\lambda}}{k!}(1)$$
+$$p(k) = (1)\frac{\lambda^k e^{-\lambda}}{k!}(1)$$
 
 or 
 
-$$p(k) = \frac{{\lambda^k e^{-\lambda}}{k!}$$
+$$p(k) = \frac{\lambda^k e^{-\lambda}}{k!}$$
 
 ### Poisson Regression and log link function
 
@@ -180,18 +180,18 @@ Therefore our probability mass function becomes: $p(y\mid x;\theta )={\frac {\la
 
 Then our likelihood estimate becomes:
 
-$p(y_{1},\ldots ,y_{m}\mid x_{1},\ldots ,x_{m};\theta )=\prod _{i=1}^{m}{\frac {e^{y_{i}\theta 'x_{i}}e^{-e^{\theta 'x_{i}}}}{y_{i}!}}$
+$$p(y_{1},\ldots ,y_{m}\mid x_{1},\ldots ,x_{m};\theta )=\prod _{i=1}^{m}{\frac {e^{y_{i}\theta 'x_{i}}e^{-e^{\theta 'x_{i}}}}{y_{i}!}}$$
 
-$L(\theta \mid X,Y)=\prod _{i=1}^{m}{\frac {e^{y_{i}\theta 'x_{i}}e^{-e^{\theta 'x_{i}}}}{y_{i}!}}$
+$$L(\theta \mid X,Y)=\prod _{i=1}^{m}{\frac {e^{y_{i}\theta 'x_{i}}e^{-e^{\theta 'x_{i}}}}{y_{i}!}}$$
 
 However the above product form becomes unwieldy and computationally expensive, so we use log likelihood instead. As can be seen from the equation below, log likelihood is elegant:
 
-$\ell (\theta \mid X,Y)=\log L(\theta \mid X,Y)=\sum _{i=1}^{m}\left(y_{i}\theta 'x_{i}-e^{\theta 'x_{i}}-\log(y_{i}!)\right).$
+$$\ell (\theta \mid X,Y)=\log L(\theta \mid X,Y)=\sum _{i=1}^{m}\left(y_{i}\theta 'x_{i}-e^{\theta 'x_{i}}-\log(y_{i}!)\right).$$
 
 Now, notice that that $-\log(y_{i}!)$ does not depend on $\theta$, therefore, we can remove it from the objective function.
 
-$\ell (\theta \mid X,Y)=\sum _{i=1}^{m}\left(y_{i}\theta 'x_{i}-e^{\theta 'x_{i}}\right)$
+$$\ell (\theta \mid X,Y)=\sum _{i=1}^{m}\left(y_{i}\theta 'x_{i}-e^{\theta 'x_{i}}\right)$$
 
 In order to find the maximum likelihood estimate (MLE) we use the first derivative:
 
-$\frac {\partial \ell (\theta \mid X,Y)}{\partial \theta }=0$
+$$\frac {\partial \ell (\theta \mid X,Y)}{\partial \theta }=0$$
