@@ -168,15 +168,11 @@ $$(1-\frac\lambda{n})^{n}\to\ e^{-\lambda}$$.
 
 Substituting all of these values in our equation, we get
 
-\begin{equation}
-p(k) = (1){{\lambda^k e^{-\lambda}}\over{k!}}(1)
-\end{equation}
+$$p(k) = (1){{\lambda^k e^{-\lambda}}\over{k!}}(1)$$
 
 or 
 
-\begin{equation}
-p(k) = {{\lambda^k e^{-\lambda}}\over{k!}}
-\end{equation}
+$$p(k) = {{\lambda^k e^{-\lambda}}\over{k!}}$$
 
 ### Poisson Regression and log link function
 
