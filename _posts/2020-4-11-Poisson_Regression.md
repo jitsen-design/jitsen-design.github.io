@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Poisson regression and intuition behind Poisson distribution of Y variable
+title: Poisson Regression and Intuition Behind Poisson Distribution of Y Variable
 mathjax: true
 ---
 
