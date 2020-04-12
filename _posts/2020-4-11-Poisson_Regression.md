@@ -118,9 +118,7 @@ From the above plot it is evident that individual outcomes are relatively small 
 
 The Poisson random variable is used to model count data. The probability mass function for a Poisson random variable is given as:
 
-\begin{equation}
-p(k) = {{\lambda^k e^{-\lambda}}\over{k!}}
-\end{equation}
+$$p(k) = {{\lambda^k e^{-\lambda}}\over{k!}}$$
 
 Where ${\lambda}$ is the mean or expected value of the Poisson random variable and k is the observed outcome. ${p(k)}$ tells us the probability of observing such an outcome given ${\lambda}$. Let's set about deriving the above pmf. Let's start with defining our expected value. Recalling the binomial distribution, we can model the expected value as:
 
