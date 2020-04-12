@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Poisson regression and intuition behind Poisson distribution of Y variable
