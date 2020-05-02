@@ -31,7 +31,7 @@ Let us focus on COPD for the remainder of this discussion. We will revisit IHD a
 
 With some regularization, I achieved good results (an R^2 of 0.70608 for COPD); while also achieving better results with a Random Forest regressor (R^2 of 0.87757 for COPD).
 
-However, neither model could quantify the effect of particulate matter density. With my Poisson GLM, the coefficient for this feature (variable) was small and fluctuated wildly every time I ran my model (in spite of a small p-value). As for the Random Forest regressor, the model cannot provide coefficients to begin with (only feature importances). Since I clearly needed a different technique to quantify the effect of particle density, I tried controlling for confounders using K-Means. 
+However, neither model could quantify the effect of particulate matter density reliably. With my Poisson GLM, the coefficient for this feature (variable) was small and fluctuated wildly based on the test train split. As for the Random Forest regressor, the model cannot provide coefficients to begin with (only feature importances). Since I clearly needed a different technique to quantify the effect of particle density, I tried controlling for confounders using K-Means. 
 
 ![K-Means Clusters](../images/COPD_K_Means.png?raw=true)
 
