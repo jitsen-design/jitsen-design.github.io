@@ -30,16 +30,16 @@ Let's create a dataframe from random randomly from a range
 
 
 ```python
-df = pd.DataFrame({'x': np.random.choice(np.arange(40), 10000),
-                   'y': np.random.choice(np.arange(40), 10000),
-                   'z': np.random.choice(np.arange(40), 10000)})
+df = pd.DataFrame({'x': np.random.normal(500, 250, 100000),
+                   'y': np.random.normal(500, 250, 100000),
+                   'z': np.random.normal(500, 250, 100000)})
 ```
 
 Let's also create an outcome variable using a random linear regression equation applied to our randomly generated featurespace
 
 
 ```python
-df['outcome'] = df['x']*.3+df['y']*.1+df['z']*.06
+df['outcome'] = df['x']*.003+df['y']*.001+df['z']*.0006
 ```
 
 Let's the resulting outcome
@@ -54,11 +54,11 @@ sns.kdeplot(df['outcome'],
 ![png](../images/output_9_0_pois.png?raw=True)
 
 
-We can see that the outcome variable is fairly symmetric. Let's treat each row's outcome as an expected value from a Poisson distribution and draw a random value from each distribution.
+We can see that the outcome variable is fairly symmetric. Let's treat each row's outcome as an expected value from a Poisson distribution and draw a random value from each distribution. Notice that we have to exponentiate the outcome variable. See the end of the notebook on Poisson regression for more information.
 
 
 ```python
-df['outcome'] = df['outcome'].apply(lambda x: np.random.poisson(x))
+df['outcome'] = np.exp(df['outcome']).apply(lambda x: np.random.poisson(x))
 ```
 
 
@@ -67,6 +67,7 @@ sns.kdeplot(df['outcome'],
             shade=True);
 plt.xlabel('Value of Observation');
 plt.ylabel('Density / Normalized Count');
+plt.xlim(0,60);
 ```
 
 
@@ -78,10 +79,10 @@ Now we can see that the fairly symmetric shape now has a distinct Poisson flavor
 
 ```python
 fig, ax = plt.subplots(1,2,figsize=(15,5))
-for i,j in [(0,10),
-            (10,20),
-            (20,30),
-            (30,40)
+for i,j in [(0,200),
+            (200,400),
+            (400,600),
+            (600,800)
             ]:
     hist_series = df[(df['x']>i) & 
                      (df['x']<j) &
@@ -108,6 +109,7 @@ ax[1].set_xlabel('Value of Observation');
 ax[0].set_ylabel('Density / Normalized Count');
 ax[0].set_title('Partitioned KDE');
 ax[1].set_title('Full KDE');
+ax[1].set_xlim(0,60);
 ```
 
 
